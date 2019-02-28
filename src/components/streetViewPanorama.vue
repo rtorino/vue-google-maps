@@ -6,7 +6,8 @@
 </template>
 
 <script>
-export default (function (x) { return x.default || x })(require('./streetViewPanoramaImpl.js'))
+import streetViewPanoramaImpl from './streetViewPanoramaImpl';
+export default (function (x) { return x.default || x })(require(streetViewPanoramaImpl)
 </script>
 
 <style lang="css">

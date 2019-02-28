@@ -9,7 +9,8 @@
 </template>
 
 <script>
-export default (function (x) { return x.default || x })(require('./mapImpl.js'))
+import mapImpl from './mapImpl'
+export default (function (x) { return x.default || x })(mapImpl)
 </script>
 
 <style lang="css">

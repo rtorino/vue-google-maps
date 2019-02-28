@@ -7,5 +7,6 @@
 </template>
 
 <script>
-export default (function (x) { return x.default || x })(require('./autocompleteImpl.js'))
+import autocompleteImpl from './autocompleteImpl'
+export default (function (x) { return x.default || x })(autocompleteImpl)
 </script>
